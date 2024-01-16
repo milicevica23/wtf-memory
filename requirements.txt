@@ -1,2 +1,4 @@
 memray
 duckdb
+pyarrow
+deltalake

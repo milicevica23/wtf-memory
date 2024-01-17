@@ -6,20 +6,26 @@ For memory profiling is [memray](https://github.com/bloomberg/memray) used.
 ## Structure:
 Each folder is a use case and contains:
     - a notebook for playing around
-    - a python script to define the program
-    - visualization 
+    - a python script to define the script
 
 
-- [ ] 001-hello-world-setup
-- [ ] 002-generate-tpch-data-with-duckdb
+- 001-hello-world-setup
+- 002-generate-tpch-data-with-duckdb
 
 
 ## To create the environment:
-
+```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+```
 
+## To start the script with mamray
+```bash
+mamray --native <script>
+```
+
+look into the logs and create an html page with the provided command
 
 ## How to track a notebook process:
 

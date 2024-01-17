@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ## To start the script with mamray
 ```bash
-mamray --native <script>
+memray --native <script>
 ```
 
 look into the logs and create an html page with the provided command

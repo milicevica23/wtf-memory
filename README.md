@@ -5,8 +5,9 @@ For memory profiling is [memray](https://github.com/bloomberg/memray) used.
 
 ## Structure:
 Each folder is a use case and contains:
+
     - a notebook for playing around
-    - a python script to define the script
+    - a python script to execute with memray
 
 
 - 001-hello-world-setup
@@ -20,7 +21,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## To start the script with mamray
+## To start the script with memray
 ```bash
 memray --native <script>
 ```

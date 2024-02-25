@@ -1,16 +1,18 @@
-import duckdb
 import time
+
+import duckdb
 
 conn = duckdb.connect(":memory:")
 conn.sql(
     """
 INSTALL tpch;
 LOAD tpch;
-CALL dbgen(sf = 1);
+CALL dbgen(sf = 0.3);
 """
 )
-time.sleep(1)
-
+time.sleep(2)
+##your code
+time.sleep(2)
 conn.sql(
     """
 DROP TABLE IF EXISTS customer;

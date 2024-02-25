@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 ## To start the script with memray
 ```bash
-memray --native <script>
+memray run --native <script>
 ```
 
 look into the logs and create an html page with the provided command

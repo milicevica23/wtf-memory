@@ -2,3 +2,5 @@ memray
 duckdb
 pyarrow
 deltalake
+ruff
+pandas

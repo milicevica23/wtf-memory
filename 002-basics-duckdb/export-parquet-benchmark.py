@@ -30,7 +30,7 @@ for statement_sql in statements:
         t = time.process_time()
 
         conn.sql(
-            "COPY (SELECT * FROM (SELECT * FROM lineitem)) TO './test0.parquet' (FORMAT PARQUET);"
+            f"COPY (SELECT * FROM ({statement_sql})) TO './test0.parquet' (FORMAT PARQUET);"
         )
 
         elapsed_time = time.process_time() - t

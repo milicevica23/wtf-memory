@@ -76,4 +76,4 @@ for statement_sql in statements:
     print(f"b : {np.average(b)}")
     print(f"c : {np.average(c)}")
     print(f"d : {np.average(d)}")
-    print(f"d : {np.average(e)}")
+    print(f"e : {np.average(e)}")
